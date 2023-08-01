@@ -21,12 +21,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-1e-9hc">
+                                <rect key="frame" x="172" y="675" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRk-UR-yKA">
                                 <rect key="frame" x="127.33333333333333" y="738" width="138.66666666666669" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Sayfayı Oluştur"/>
                                 <connections>
-                                    <segue destination="ZIe-Oh-UFU" kind="show" id="Fm7-Rx-GY6"/>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwq-Eb-mRc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,7 +46,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sayfa Oluşturucu" id="xOO-dc-LYR"/>
                     <connections>
+                        <outlet property="segueSwitch" destination="AaA-1e-9hc" id="63T-1m-P3X"/>
                         <outlet property="titleTextField" destination="cFo-KY-OCZ" id="YJA-bU-08h"/>
+                        <segue destination="ZIe-Oh-UFU" kind="show" identifier="nextSegue" id="7aw-Px-8wz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
