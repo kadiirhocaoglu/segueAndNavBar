@@ -1,4 +1,4 @@
-
+# Segue
 # Ekranlar - Screens
 | -- | -- |
 |---------|---------|
